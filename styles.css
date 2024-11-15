@@ -7,69 +7,97 @@
 
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #002366;
-    color: #fff;
+    background-color: #002366; /* Deep royal blue */
+    color: #f0e68c; /* Gold */
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #ffdf00; /* Light gold */
 }
 
 /* Introduction Section */
 .intro {
     padding: 2rem 1rem;
     text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Timeline Section */
 .timeline {
     background-color: #f4f4f4;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     text-align: center;
 }
 
 .timeline h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #002366;
+    margin-bottom: 1rem;
 }
 
 .timeline-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .event {
     background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.event:hover {
+    transform: scale(1.02);
 }
 
 .event h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: #002366;
 }
 
 .event p {
     font-size: 1rem;
+    color: #555;
 }
 
 .event a {
     color: #002366;
     text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #ffdf00;
+    padding-bottom: 2px;
+}
+
+.event a:hover {
+    color: #ffdf00; /* Gold */
 }
 
 /* Milestones Section */
@@ -80,51 +108,60 @@ body {
 
 .milestone {
     margin-bottom: 1.5rem;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .milestone h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    color: #002366;
 }
 
 .milestone p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #555;
 }
 
 /* Multimedia Gallery Section */
 .gallery {
     background-color: #f4f4f4;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     text-align: center;
 }
 
 .gallery h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #002366;
 }
 
 .gallery-content {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 .gallery img,
-.gallery video {
-    width: 300px;
+.gallery iframe {
+    width: 550px;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid #002366;
 }
 
 /* Footer Section */
 .references {
     padding: 2rem 1rem;
     background-color: #333;
-    color: #fff;
+    color: #f0e68c; /* Gold */
     text-align: center;
 }
 
 .references h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffdf00; /* Light gold */
 }
 
 .references ul {
@@ -133,11 +170,17 @@ body {
 }
 
 .references li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0.5rem 0;
 }
 
 .references a {
-    color: #ffa500;
+    color: #ffdf00;
     text-decoration: none;
+    border-bottom: 1px solid #f0e68c;
+}
+
+.references a:hover {
+    color: #f0e68c;
+    border-bottom: 1px solid #ffdf00;
 }
